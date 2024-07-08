@@ -1,0 +1,16 @@
+@startuml
+
+Accueil -> A_propos
+A_propos -> blog
+A_propos -> inscription
+Accueil -down-> mon_compte
+Accueil -> page_de_connexion
+mon_compte -> enregistrer_une_borne
+mon_compte -> reserver_une_borne
+reserver_une_borne -> panier
+panier -> validation
+
+
+
+
+@enduml

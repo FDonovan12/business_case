@@ -1,0 +1,33 @@
+@startuml
+top to bottom direction
+Class navbar {
+    Accueil, Dropdown?trouver une borne, Ajouter une borne
+    A_propos
+    DropDown(Mon_compte, Mes_bornes, Mes_reservation)
+    connexion / deconnexion
+    inscription
+}
+
+Class Accueil {
+    carrousel trouver une borne
+    Ajouter une borne
+}
+
+Class mon_compte {
+    Mes_bornes, ajouter une borne, demande de reservation visible
+    Mes_reservation, trouver une borne
+}
+
+Class Mes_reservation {
+
+}
+
+Class Mes_bornes {
+    
+}
+Accueil -- navbar
+navbar -- mon_compte
+mon_compte -- Mes_bornes
+mon_compte -- Mes_reservation
+
+@enduml
